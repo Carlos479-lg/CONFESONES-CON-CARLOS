@@ -63,13 +63,13 @@ border-radius:25px;
 padding:20px;
 text-align:center;
 max-width:420px;
-margin:80px auto;
+margin:80px auto 30px auto;
 box-shadow:
 0 20px 50px rgba(0,0,0,.6),
 0 0 25px rgba(254,221,0,.25);
 }
 
-/* ===== FOTO ===== */
+/* FOTO */
 
 .profile-wrapper{
 display:flex;
@@ -83,7 +83,6 @@ height:140px;
 border-radius:50%;
 border:5px solid #FEDD00;
 object-fit:cover;
-background:#fff;
 transition:.3s;
 cursor:pointer;
 }
@@ -93,7 +92,7 @@ transform:scale(1.08);
 box-shadow:0 0 25px #FEDD00;
 }
 
-/* ===== TEXTOS ===== */
+/* TEXTOS */
 
 h1{
 font-size:30px;
@@ -114,7 +113,7 @@ min-height:24px;
 margin-bottom:15px;
 }
 
-/* ===== VIDEO ===== */
+/* VIDEO */
 
 .video{
 margin:15px 0;
@@ -129,7 +128,7 @@ height:200px;
 border:none;
 }
 
-/* ===== BOTONES ===== */
+/* BOTONES */
 
 .social{
 display:flex;
@@ -149,25 +148,34 @@ gap:10px;
 transition:.3s;
 }
 
-/* INSTAGRAM */
-.instagram{background:linear-gradient(90deg,#ff3cac,#d85eff);}
-.instagram:hover{transform:scale(1.05);box-shadow:0 0 20px #ff3cac;}
+.btn-social:hover{
+transform:scale(1.05);
+}
 
-/* FACEBOOK */
-.facebook{background:linear-gradient(90deg,#2f7fff,#54d2ff);}
-.facebook:hover{transform:scale(1.05);box-shadow:0 0 20px #2f7fff;}
+/* REDES */
 
-/* TIKTOK */
-.tiktok{background:linear-gradient(90deg,#000,#333);}
-.tiktok:hover{transform:scale(1.05);box-shadow:0 0 20px #fff;}
-
-/* YOUTUBE */
 .youtube{background:linear-gradient(90deg,#ff0000,#ff3b3b);}
-.youtube:hover{transform:scale(1.05);box-shadow:0 0 25px #ff0000;}
+.youtube:hover{box-shadow:0 0 25px #ff0000;}
+
+.instagram{background:linear-gradient(90deg,#ff3cac,#d85eff);}
+.instagram:hover{box-shadow:0 0 25px #ff3cac;}
+
+.facebook{background:linear-gradient(90deg,#2f7fff,#54d2ff);}
+.facebook:hover{box-shadow:0 0 25px #2f7fff;}
+
+.tiktok{background:linear-gradient(90deg,#000,#333);}
+.tiktok:hover{box-shadow:0 0 25px #ffffff;}
+
+.x{
+background:linear-gradient(90deg,#000,#1a1a1a);
+}
+.x:hover{
+box-shadow:0 0 25px #000;
+}
 
 /* HISTORIA */
 .historia{background:linear-gradient(90deg,#ff3cac,#ff6b6b);}
-.historia:hover{transform:scale(1.05);box-shadow:0 0 25px #ff3cac;}
+.historia:hover{box-shadow:0 0 25px #ff3cac;}
 
 /* SHOP */
 .shop{
@@ -176,10 +184,23 @@ border:2px solid #FEDD00;
 color:#FEDD00;
 }
 .shop:hover{
-transform:scale(1.05);
 background:#FEDD00;
 color:#111;
 box-shadow:0 0 30px #FEDD00;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+font-size:13px;
+color:#111;
+margin-bottom:30px;
+opacity:.8;
+}
+
+.footer span{
+font-weight:bold;
 }
 
 </style>
@@ -201,13 +222,17 @@ src="https://raw.githubusercontent.com/Carlos479-lg/CONFESONES-CON-CARLOS/main/W
 
 <h1>Hola, soy Carlos 🚀</h1>
 <p class="subtitle">Confesiones con Carlos</p>
-<div class="creator-text" id="creatorText">🎙️ Podcast & Confesiones</div>
+<div class="creator-text" id="creatorText">🌅 Vida diaria</div>
 
 <div class="video">
 <iframe src="https://www.youtube.com/embed/CqyfGetHatY" allowfullscreen></iframe>
 </div>
 
 <div class="social">
+
+<a class="btn-social youtube" href="https://www.youtube.com/@ConfesionesConCarlos/" target="_blank">
+<i class="fab fa-youtube"></i> YouTube
+</a>
 
 <a class="btn-social instagram" href="https://www.instagram.com/stories/soywandercarlos/" target="_blank">
 <i class="fab fa-instagram"></i> Instagram
@@ -221,8 +246,8 @@ src="https://raw.githubusercontent.com/Carlos479-lg/CONFESONES-CON-CARLOS/main/W
 <i class="fab fa-tiktok"></i> TikTok
 </a>
 
-<a class="btn-social youtube" href="https://www.youtube.com/@ConfesionesConCarlos/" target="_blank">
-<i class="fab fa-youtube"></i> YouTube
+<a class="btn-social x" href="https://x.com/SoyWanderCarlos" target="_blank">
+<i class="fab fa-x-twitter"></i> X
 </a>
 
 <a class="btn-social historia" href="mailto:ConfesioneConCarlos@gmail.com?subject=Quiero enviarte mi historia">
@@ -237,13 +262,18 @@ src="https://raw.githubusercontent.com/Carlos479-lg/CONFESONES-CON-CARLOS/main/W
 
 </div>
 
+<div class="footer">
+© 2026 Confesiones con Carlos<br>
+Powered by <span>AFELANDROART</span>
+</div>
+
 <script>
 
 const texts=[
-"🎙️ Confesiones reales",
-"🔥 Historias impactantes",
-"✨ Carlos vibes",
-"💬 Tu historia importa"
+"🌅 Vida diaria",
+"📹 Vlogs",
+"🩲 Ropa interior masculina",
+"🐭💪 Gym rat"
 ];
 
 let i=0;
